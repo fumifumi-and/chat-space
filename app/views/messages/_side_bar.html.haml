@@ -4,15 +4,15 @@
       .top-items__name
         = current_user.name
       .top-items__icons 
-        = link_to"#", class: "contents__btn1" do
+        = link_to new_group_path, class: "contents__btn1" do
           = icon('far', 'edit')
         = link_to edit_user_path(current_user), class: "contents__btn2" do
           = icon('fas', 'cog')
   .side-bar__group-list
-    .group
-      .group__name　tech-camp 
-      .group__message　メッセージはありません
-      
-    .group
-      .group__name　tech-camp 
-      .group__message　メッセージはありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to `#` do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません
