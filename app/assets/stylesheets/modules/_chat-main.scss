@@ -36,7 +36,6 @@
         color: #38aef0;
      }
     }
-
   }
   &__message-list{
     background-color: #fafafa;
@@ -71,26 +70,27 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    display: flex;
     &__input-box {
+      display: flex;
       width: 100%;
       position: relative;
-    }
-    .message-text{
-      height: 50px;
-      width:100%;
-      padding: 0 40px 0 10px ;
-    }
-    .image-icon{
-      position: absolute;
-      right: 10px;
-      top: 13px;
-    }
-    .file{
-      display: none;
+    
+      .message-text{
+        height: 50px;
+        width:100%;
+        padding: 0 40px 0 10px ;
+      }
+      .image-icon{
+        position: absolute;
+        right: 120px;
+        top: 13px;
+      }
+      .file{
+        display: none;
+      }
     }
     
-    .send-btn{
+    &__send-btn{
       height: 50px;
       width: 100px;
       background-color: #38aef0;
